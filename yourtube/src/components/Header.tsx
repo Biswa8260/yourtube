@@ -14,6 +14,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 import Channeldialogue from "./channeldialogue";
 import { useRouter } from "next/router";
 import { useUser } from "@/lib/AuthContext";
+import { toast } from "sonner";
 
 const Header = () => {
   const { user, theme, updateTheme, logout, handlegooglesignin } = useUser();
